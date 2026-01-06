@@ -3,6 +3,7 @@
     "slug": "modern-starter",
     "version": "1.0.0",
     "description": "A clean, modern starter theme for the Ecommerce Platform. Features responsive design, dark mode support, and customizable color schemes.",
+    "provider": "Themes\\ModernStarter\\ModernStarterThemeServiceProvider",
     "author": {
         "name": "Ecommerce Platform",
         "email": "themes@ecommerce-platform.com",
