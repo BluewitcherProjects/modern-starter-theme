@@ -1,0 +1,138 @@
+{
+    "name": "Modern Starter Theme",
+    "slug": "modern-starter",
+    "version": "1.0.0",
+    "description": "A clean, modern starter theme for the Ecommerce Platform. Features responsive design, dark mode support, and customizable color schemes.",
+    "author": {
+        "name": "Ecommerce Platform",
+        "email": "themes@ecommerce-platform.com",
+        "url": "https://ecommerce-platform.com"
+    },
+    "homepage": "https://github.com/ecommerce-platform/modern-starter-theme",
+    "license": "MIT",
+    "requires": {
+        "core": "^1.0",
+        "php": "^8.2"
+    },
+    "parent": null,
+    "screenshots": [
+        "screenshots/homepage.png",
+        "screenshots/product-page.png",
+        "screenshots/cart.png"
+    ],
+    "regions": [
+        "header",
+        "main-content",
+        "sidebar",
+        "footer",
+        "hero-banner",
+        "featured-products",
+        "newsletter"
+    ],
+    "settings": {
+        "primary_color": {
+            "type": "color",
+            "label": "Primary Color",
+            "default": "#4F46E5",
+            "description": "Main brand color used for buttons, links, and accents"
+        },
+        "secondary_color": {
+            "type": "color",
+            "label": "Secondary Color",
+            "default": "#10B981",
+            "description": "Secondary accent color"
+        },
+        "dark_mode": {
+            "type": "boolean",
+            "label": "Enable Dark Mode Toggle",
+            "default": true,
+            "description": "Allow users to switch between light and dark themes"
+        },
+        "show_hero_banner": {
+            "type": "boolean",
+            "label": "Show Hero Banner",
+            "default": true,
+            "description": "Display the hero banner on the homepage"
+        },
+        "hero_title": {
+            "type": "text",
+            "label": "Hero Title",
+            "default": "Welcome to Our Store",
+            "description": "Main heading for the hero section"
+        },
+        "hero_subtitle": {
+            "type": "textarea",
+            "label": "Hero Subtitle",
+            "default": "Discover amazing products at great prices",
+            "description": "Subheading text for the hero section"
+        },
+        "hero_image": {
+            "type": "image",
+            "label": "Hero Background Image",
+            "default": "",
+            "description": "Background image for the hero banner"
+        },
+        "products_per_row": {
+            "type": "select",
+            "label": "Products Per Row",
+            "default": "4",
+            "options": {
+                "3": "3 Products",
+                "4": "4 Products",
+                "5": "5 Products",
+                "6": "6 Products"
+            },
+            "description": "Number of products displayed per row in grid layouts"
+        },
+        "show_newsletter": {
+            "type": "boolean",
+            "label": "Show Newsletter Section",
+            "default": true,
+            "description": "Display newsletter signup form in footer"
+        },
+        "footer_columns": {
+            "type": "select",
+            "label": "Footer Columns",
+            "default": "4",
+            "options": {
+                "2": "2 Columns",
+                "3": "3 Columns",
+                "4": "4 Columns"
+            }
+        },
+        "custom_css": {
+            "type": "textarea",
+            "label": "Custom CSS",
+            "default": "",
+            "description": "Add custom CSS styles to customize the theme"
+        },
+        "custom_js": {
+            "type": "textarea",
+            "label": "Custom JavaScript",
+            "default": "",
+            "description": "Add custom JavaScript code"
+        }
+    },
+    "menus": {
+        "primary": {
+            "label": "Primary Navigation",
+            "location": "header"
+        },
+        "footer": {
+            "label": "Footer Navigation",
+            "location": "footer"
+        },
+        "category": {
+            "label": "Category Menu",
+            "location": "sidebar"
+        }
+    },
+    "widgets": [
+        "search",
+        "categories",
+        "recent-products",
+        "featured-products",
+        "newsletter",
+        "social-links"
+    ]
+}
